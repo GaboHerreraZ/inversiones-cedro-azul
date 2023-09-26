@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply overflow-hidden mx-auto;
+  }
+
+  .button {
+    @apply bg-cedro text-cedro-900 w-max py-4 px-8 rounded-full h-4 flex items-center cursor-pointer;
+  }
+}

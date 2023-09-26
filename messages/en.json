@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Inversiones Cedro Azul",
+    "slogan": "Creando para durar,^1000\n `creando para disfrutar...`"
+  },
+  "LocaleLayout": {
+    "title": "Inversiones Cedro Azul"
+  }
+}
