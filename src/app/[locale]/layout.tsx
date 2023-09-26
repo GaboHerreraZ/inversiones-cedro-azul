@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Changa } from "next/font/google";
-import { Navbar } from "../../components/navbar";
 import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";

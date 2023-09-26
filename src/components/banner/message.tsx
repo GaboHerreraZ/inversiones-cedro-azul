@@ -11,7 +11,7 @@ export const Message = () => {
 
     const typed = new Typed(el.current, {
       strings: [message],
-      startDelay: 1000,
+      startDelay: 2000,
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
@@ -23,5 +23,10 @@ export const Message = () => {
     };
   }, []);
 
-  return <span className="whitespace-pre" ref={el}></span>;
+  return (
+    <span
+      className="whitespace-pre text-cedro-800 text-2xl md:text-3xl"
+      ref={el}
+    ></span>
+  );
 };

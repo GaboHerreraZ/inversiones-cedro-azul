@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/navbar";
+import { AboutUs as About } from "@/components/about-us/about-us";
 
 export default function AboutUs() {
-  return <Navbar />;
+  return <About />;
 }

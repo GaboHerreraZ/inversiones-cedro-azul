@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -6,7 +7,7 @@ module.exports = {
       backgroundImage: {
         "open-menu": "url('../../../public/svg/bars.svg')",
         "close-menu": "url('../../../public/svg/close.svg')",
-        "bg-image": "url('../../../public/img/home-header.jpg')",
+        "bg-image": "url('../../../public/img/home-header.png')",
       },
       colors: {
         "background-header": "#faf7f7",
@@ -36,11 +37,16 @@ module.exports = {
         fadeIn: {
           "0%": {
             opacity: 0,
+            "background-color": "rgb(156 163 175 / 1)",
           },
           "100%": {
             opacity: 0.4,
+            "background-color": "rgb(156 163 175 / 2)",
           },
         },
+      },
+      boxShadow: {
+        "cedro-custom": "0px 15px 10px -20px #44b5fc",
       },
     },
   },
