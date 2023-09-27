@@ -1,15 +1,25 @@
 {
   "navbar": {
-    "home": "Home",
-    "aboutUs": "About Us",
-    "projects": "Projects",
-    "contact": "Contact"
+    "home": "INICIO",
+    "aboutUs": "SOBRE NOSOTROS",
+    "projects": "PROYECTOS",
+    "service": "SERVICIOS",
+    "contact": "CONTACT"
   },
   "home": {
-    "title": "Inversiones Cedro Azul",
-    "slogan": "Creando para durar,^1000\n `creando para disfrutar...`"
+    "title": "INVERSIONES CEDRO AZUL",
+    "slogan": "CONSTRUYENDO PARA DURAR,^1000\n `CREANDO PARA DIFRUTAR.`"
   },
   "LocaleLayout": {
     "title": "Inversiones Cedro Azul"
+  },
+  "about-us": {
+    "title1": "La ",
+    "title2": "CONSTRUCCIÓN ",
+    "title3": "es Nuestra Pasión, ",
+    "title4": "tu ",
+    "title5": "CONFIANZA ",
+    "title6": "es Nuestra Meta.",
+    "header": "Somos una empresa joven y dinámica que ofrece servicios de construcción e ingeniería fundada en el 2019.|Hemos realizado proyectos exitosos en diferentes áreas, como vías, edificaciones, diseño y remodelación de interiores, redes hidrosanitarias, gas y contraincentos, entre otros.|Nuestra filosofía es brindar soluciones eficaces y de calidad a nuestros clientes, cumpliendo con sus expectativas y necesidades. "
   }
 }

@@ -11,7 +11,7 @@ export const Message = () => {
 
     const typed = new Typed(el.current, {
       strings: [message],
-      startDelay: 2000,
+      startDelay: 500,
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
@@ -25,7 +25,7 @@ export const Message = () => {
 
   return (
     <span
-      className="whitespace-pre text-cedro-800 text-2xl md:text-3xl"
+      className="whitespace-pre font-bold text-cedro-700 text-2xl md:text-3xl"
       ref={el}
     ></span>
   );

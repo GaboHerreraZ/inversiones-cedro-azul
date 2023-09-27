@@ -7,7 +7,8 @@ module.exports = {
       backgroundImage: {
         "open-menu": "url('../../../public/svg/bars.svg')",
         "close-menu": "url('../../../public/svg/close.svg')",
-        "bg-image": "url('../../../public/img/home-header.png')",
+        home: "url('../../../public/img/home.png')",
+        "sobre-nosotros": "url('../../../public/img/sobre-nosotros.png')",
       },
       colors: {
         "background-header": "#faf7f7",
