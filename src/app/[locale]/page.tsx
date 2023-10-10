@@ -1,5 +1,16 @@
-import { Home as InHome } from "@/components/banner/banner";
+import { ContactHome } from "@/components/contact/contact-home";
+import { Home as HomeDefault } from "@/components/home/home";
 
 export default function Home() {
-  return <InHome />;
+  return <HomeDefault />;
 }
+
+/**
+ * 
+ * <>
+      <InHome />
+      <Services />
+      <ContactHome />
+    </>
+ * 
+ */

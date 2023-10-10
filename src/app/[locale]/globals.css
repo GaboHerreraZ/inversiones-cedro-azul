@@ -8,6 +8,10 @@
   }
 
   .button {
-    @apply bg-cedro text-cedro-900 w-max py-4 px-8 rounded-full h-4 flex items-center cursor-pointer;
+    @apply bg-white text-cedro-900 font-bold shadow-cedro-500/30 hover:text-white hover:bg-cedro-900 w-max py-4 px-4 rounded-lg h-4 flex items-center cursor-pointer;
+  }
+
+  .button-dark {
+    @apply bg-cedro-900 text-white font-bold shadow-cedro-500/30 hover:text-cedro-900 hover:bg-cedro-700 w-max py-4 px-8 rounded-lg h-4 flex items-center cursor-pointer;
   }
 }

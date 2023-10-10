@@ -2,14 +2,31 @@
   "navbar": {
     "home": "Inicio",
     "aboutUs": "Sobre Nosotros",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "projects": "Proyectos"
   },
   "home": {
     "title": "Inversiones Cedro Azul",
-    "slogan": "Creando para durar,^1000\n `creando para disfrutar...`"
+    "slogan": "CONSTRUYENDO PARA DURAR, CREANDO PARA DIFRUTAR...",
+    "contact": "Contactanos"
   },
   "LocaleLayout": {
     "title": "Inversiones Cedro Azul"
+  },
+  "services": {
+    "title": "NUESTROS SERVICIOS",
+    "design": "DISEÑO ARQUITECTONICO",
+    "building": "CONSTRUCCIÓN RESIDENCIAL",
+    "commercialBuilding": "CONSTRUCCIÓN COMERCIAL",
+    "remodeling": "REMODELACIÓN Y RENOVACIÓN",
+    "infrastructureBuilding": "CONSTRUCCIÓN DE INFRAESTRUCTURA",
+    "consultingBuilding": "CONSULTORÍA EN CONSTRUCCIÓN",
+    "designDescription": "Diseñamos espacios únicos que se adaptan a tus necesidades y deseos. Nuestros arquitectos trabajan contigo para crear un diseño personalizado que refleje tu estilo y funcionalidad.",
+    "commercialBuildingDescription": "Realizamos proyectos comerciales de todo tipo, desde oficinas, colegios y coliseos, etc.",
+    "remodelingDescription": "Transformamos espacios existentes en áreas modernas y funcionales. Ya sea una oficina, una cocina, baño o toda una casa, renovamos para mejorar.",
+    "infrastructureBuildingDescription": "Diseñamos espacios únicos que se adaptan a tus necesidades y deseos.",
+    "consultingBuildingDescription": "Ofrecemos asesoramiento y consultoría en todas las etapas de un proyecto de construcción, desde la planificación hasta la ejecución.",
+    "buildingDescription": "Desde casas unifamiliares hasta condominios, estamos especializados en la construcción de viviendas de alta calidad. Ofrecemos un proceso de construcción transparente y eficiente.",
+    "seeMore": "Ver más...",
+    "description": "En nuestra constructora, convertimos tus ideas en realidades impresionantes, desde el diseño creativo hasta la construcción de alta calidad. Confía en nosotros para reflejar tu visión y estilo con excelencia en cada detalle."
   }
 }

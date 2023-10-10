@@ -1,102 +1,56 @@
-"use client"; ///TODO  pendiente de revisar para eliminar y que sea full server side rendering
-import { useTranslations } from "next-intl";
-import Link from "next/link";
-import logo from "../../../public/svg/gabriel-herrera-z-logo.svg";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { useRef } from "react";
+"use client";
+import { motion, useCycle } from "framer-motion";
+import { useRef, useState } from "react";
+import { useDimensions } from "./use-dimensions";
+import { Navigation } from "./navigation";
+import { MenuToggle } from "./menu-toogle";
 
-export const Navbar = ({ isHome = false }: { isHome?: boolean }) => {
-  const t = useTranslations("navbar");
-  const inputRef: React.RefObject<HTMLInputElement> = useRef(null);
-  const pathName = usePathname().split("/")[2]
-    ? `/${usePathname().split("/")[2]}`
-    : "/";
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.1,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
 
-  const setMenu = () => {
-    inputRef?.current?.click();
+export const Navbar = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [clicked, setClicked] = useState(false);
+
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
+  const handleButton = () => {
+    setClicked(!clicked);
+    toggleOpen();
   };
 
-  const menuNavbar = [
-    {
-      key: "home",
-      label: t("home"),
-      link: "/",
-    },
-    {
-      key: "about-us",
-      label: t("aboutUs"),
-      link: "/sobre-nosotros",
-    },
-    {
-      key: "projects",
-      label: t("projects"),
-      link: "/proyectos",
-    },
-    {
-      key: "service",
-      label: t("service"),
-      link: "/nuestros-servicios",
-    },
-  ];
-
   return (
-    <header className="wrapper  py-3 hover:bg-gray-300 hover:bg-opacity-5">
-      <nav className="h-50 p-2 flex items-center justify-between rounded-lg mx-4">
-        <a className="flex  ">
-          <Image
-            src={logo}
-            height={70}
-            width={140}
-            alt="Inversiones Cedro Azul"
-          />
-        </a>
-
-        <input
-          className="peer hidden"
-          type="checkbox"
-          id="menu"
-          ref={inputRef}
-        ></input>
-        <label
-          htmlFor="menu"
-          className="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden "
-        ></label>
-
-        <div className="fixed inset-0 z-100 bg-gradient-to-b md:flex items-center translate-x-full peer-checked:translate-x-0 transition-transform md:static md:bg-none md:translate-x-0 ">
-          <ul className="absolute inset-x-0 z-100 top-24 p-12  bg-white w-[90%] mx-auto rounded-md h-max text-center grid gap-10 shadow-2xl md:w-max md:bg-transparent md:grid-flow-col md:static md:p-0">
-            {menuNavbar.map((menu) => {
-              return (
-                <li key={menu.key} className="text-sm font-bold">
-                  <Link
-                    onClick={setMenu}
-                    href={menu.link}
-                    className={
-                      pathName === menu.link
-                        ? "border-b-2 text-cedro-800 md:text-cedro-900 border-cedro-800"
-                        : `${
-                            !isHome
-                              ? "text-cedro-800"
-                              : "text-cedro-800 md:text-white hover:text-cedro-800 hover:border-b-2 hover:border-cedro-800"
-                          }`
-                    }
-                  >
-                    {menu.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <Link
-          className="button text-white  shadow-sm hidden md:flex shadow-cedro-500/30 hover:bg-cedro-400"
-          href="/contacto"
-        >
-          {t("contact")}
-        </Link>
-      </nav>
-      <div></div>
-    </header>
+    <motion.nav
+      className={`${isOpen ? "absolute top-0 w-full left-0 bottom-0" : ""}`}
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      custom={height}
+      ref={containerRef}
+    >
+      <motion.div
+        className="absolute top-0 left-0 bottom-0 w-1/3 bg-white opacity-80"
+        variants={sidebar}
+      />
+      <Navigation clicked={clicked} />
+      <MenuToggle toggle={() => handleButton()} />
+    </motion.nav>
   );
 };
