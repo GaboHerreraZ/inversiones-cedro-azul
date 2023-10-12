@@ -1,16 +1,5 @@
-import { ContactHome } from "@/components/contact/contact-home";
-import { Home as HomeDefault } from "@/components/home/home";
+import { Home as HomeDefault } from "@/components/home/Home";
 
 export default function Home() {
   return <HomeDefault />;
 }
-
-/**
- * 
- * <>
-      <InHome />
-      <Services />
-      <ContactHome />
-    </>
- * 
- */

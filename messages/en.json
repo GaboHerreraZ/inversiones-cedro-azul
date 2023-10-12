@@ -6,16 +6,16 @@
     "home": "INICIO",
     "aboutUs": "SOBRE NOSOTROS",
     "projects": "PROYECTOS",
-    "service": "SERVICIOS",
-    "contact": "CONTACT"
+    "contact": "CONTACTO"
   },
   "home": {
     "title": "INVERSIONES CEDRO AZUL",
-    "slogan": "CONSTRUYENDO PARA DURAR,^1000\n `CREANDO PARA DIFRUTAR.`",
+    "slogan": "CONSTRUYENDO PARA DURAR",
+    "slogan-2": "CREANDO PARA DIFRUTAR",
     "contact": "Contactanos",
     "about-us-1": "Somos ",
     "about-us-2": "INVERSIONES CEDRO AZUL SAS",
-    "about-us-3": ", una empresa joven y dinámica que ofrece servicios integrales de construcción e ingeniería. Desde nuestra fundación en el año 2019, hemos realizado proyectos exitosos en diferentes áreas, como vías, edificaciones, diseño y remodelación de interiores, redes hidrosanitarias, gas y contraincendios, instalaciones de sistemas de Aires acondicionados, fabricación de carpintería madera, metálica y de aluminio.",
+    "about-us-3": ", una empresa joven y dinámica que ofrece servicios integrales de construcción e ingeniería.",
     "about-us-4": "Nuestra filosofía es brindar soluciones eficaces y de calidad a nuestros clientes, cumpliendo con sus expectativas y necesidades.",
     "seeAboutUs": "Más Sobre Nosotros"
   },
@@ -25,13 +25,13 @@
   "about-us": {
     "title-1": "SOBRE",
     "title-2": "NOSOTROS",
+    "slogan-1": "SOSTENIBILIDAD EN CADA ESTRUCTURA, ",
+    "slogan-2": "RESPETO EN CADA ENTORNO.",
     "quality": "CALIDAD",
     "security": "SEGURIDAD",
     "service": "SERVICIO",
     "innovation": "INNOVACIÓN",
     "repect": "RESPETO",
-    "whoWeAre": "¿QUIENES SOMOS?",
-    "whoWeAreDescription": "fue fundada con pasión y experiencia en el 2019. Desde entonces, hemos estado transformando ideas en realidad, creando espacios sorprendentes y funcionales. Confía en nosotros para llevar a cabo tus proyectos con maestría y dedicación.",
     "titleMision": "MISIÓN",
     "titleVision": "VISIÓN",
     "mision": "Nuestra misión es desarrollar proyectos de construcción e ingeniería que aporten valor y bienestar a nuestros clientes y a la sociedad. Para ello, contamos con un equipo humano capacitado y motivado, que trabaja con ética, responsabilidad y compromiso",
@@ -44,8 +44,7 @@
     "titleWorth": "VALORES"
   },
   "services": {
-    "title-1": "NUESTROS",
-    "title-2": "SERVICIOS",
+    "title": "NUESTROS SERVICIOS",
     "design": "DISEÑO ARQUITECTONICO",
     "building": "CONSTRUCCIÓN RESIDENCIAL",
     "commercialBuilding": "CONSTRUCCIÓN COMERCIAL",
@@ -59,7 +58,10 @@
     "consultingBuildingDescription": "Ofrecemos asesoramiento y consultoría en todas las etapas de un proyecto de construcción, desde la planificación hasta la ejecución.",
     "buildingDescription": "Desde casas unifamiliares hasta condominios, estamos especializados en la construcción de viviendas de alta calidad. Ofrecemos un proceso de construcción transparente y eficiente.",
     "seeMore": "Ver más...",
-    "description": "En nuestra constructora, convertimos tus ideas en realidades impresionantes, desde el diseño creativo hasta la construcción de alta calidad. Confía en nosotros para reflejar tu visión y estilo con excelencia en cada detalle.",
-    "seeProjects": "Ver Proyectos"
+    "description": "Desde nuestra fundación en el año 2019, hemos realizado proyectos exitosos en diferentes áreas, como vías, edificaciones, diseño y remodelación de interiores, redes hidrosanitarias, gas y contraincendios, instalaciones de sistemas de Aires acondicionados, fabricación de carpintería madera, metálica y de aluminio. "
+  },
+  "projects": {
+    "title": "NUESTROS",
+    "subtitle": "PROYECTOS"
   }
 }

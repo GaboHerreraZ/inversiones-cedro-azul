@@ -23,6 +23,23 @@ module.exports = {
         "about-us": "url('../../../public/img/sobre-nosotros.png')",
         service: "url('../../../public/img/servicios.png')",
         projects: "url('../../../public/img/proyectos.png')",
+        footer: "url('../../../public/img/footer.jpg')",
+        placa1:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-1.jpg')",
+        placa2:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-2.jpg')",
+        placa3:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-3.jpg')",
+        placa4:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-4.jpg')",
+        placa5:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-5.jpg')",
+        placa6:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-6.jpg')",
+        placa7:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-7.jpg')",
+        placa8:
+          "url('../../../public/img/projects/placa-huellas/placa-huella-8.jpg')",
       },
       colors: {
         "background-header": "#faf7f7",
@@ -40,7 +57,7 @@ module.exports = {
         },
       },
       height: {
-        home: "25rem",
+        home: "30rem",
       },
       skew: {
         30: "30deg",

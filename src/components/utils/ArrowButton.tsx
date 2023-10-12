@@ -15,7 +15,6 @@ export const ArrowButton = ({
   const router = useRouter();
 
   const handleButton = () => {
-    console.log("page");
     router.push(page);
   };
 

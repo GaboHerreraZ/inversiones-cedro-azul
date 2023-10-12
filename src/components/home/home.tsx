@@ -1,18 +1,12 @@
-import { Container } from "@/components/container/container";
-import { HomeHeader } from "@/components/home/home-header";
-import { HomeBody } from "@/components/home/home-body";
+"use client";
 
-export const Home = () => {
-  //pendiente usar useMEMO
-  const leftSide = <HomeHeader />;
-  const rightSide = <HomeBody />;
+import React from "react";
+import { Container } from "../Container/Container";
+import { HomeHeader } from "./HomeHeader";
+import { HomeBody } from "./HomeBody";
 
-  return (
-    <Container
-      isHome={true}
-      bgImage={"bg-home"}
-      leftSide={leftSide}
-      rightSide={rightSide}
-    />
-  );
-};
+export const Home = React.memo(() => {
+  const header = <HomeHeader />;
+  const body = <HomeBody />;
+  return <Container header={header} body={body} bgImage="bg-home" />;
+});

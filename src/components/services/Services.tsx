@@ -1,7 +1,5 @@
 "use client";
-
 import { useTranslations } from "next-intl";
-import { Container } from "../container/container";
 import { ServiceHeader } from "./ServiceHeader";
 import comercial from "../../../public/img/construccion-comercial.png";
 import diseno from "../../../public/img/diseno-arquitectonico.png";
@@ -9,9 +7,10 @@ import remodelacion from "../../../public/img/remodelacion-renovacion.png";
 import consultoria from "../../../public/img/consultoria-construccion.png";
 import residencial from "../../../public/img/construccion-residencial.png";
 import infraestructura from "../../../public/img/construccion-infraestructura.png";
-import { ServiceSimpleBody } from "./ServiceSimpleBody";
+import { ServiceBody } from "./ServiceBody";
+import React from "react";
 
-export const Services = () => {
+export const Services = React.memo(() => {
   const t = useTranslations("services");
 
   const services = [
@@ -53,24 +52,18 @@ export const Services = () => {
     },
   ];
 
-  const leftSide = (
-    <ServiceHeader title={t("title-1")} subtitle={t("title-2")} />
+  const Header = (
+    <ServiceHeader title={t("title")} description={t("description")} />
   );
 
-  const rightSide = (
-    <ServiceSimpleBody
-      services={services}
-      description={t("description")}
-      labelButton={t("seeProjects")}
-    />
-  );
+  const body = <ServiceBody services={services} />;
 
   return (
-    <Container
-      bgImage={"bg-service"}
-      leftSide={leftSide}
-      rightSide={rightSide}
-      darkRightSide={false}
-    />
+    <section className="bg-service bg-center bg-cover  w-full mt-20 ">
+      <div className="bg-white bg-opacity-80 py-8">
+        {Header}
+        {body}
+      </div>
+    </section>
   );
-};
+});

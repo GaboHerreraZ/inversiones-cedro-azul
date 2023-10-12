@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Container } from "../container/container";
+import { Container } from "../Container/Container";
 import { AboutUsBody } from "./AboutUsBody";
 import { AboutUsHeader } from "./AboutUsHeader";
 import quality from "../../../public/img/calidad.png";
@@ -44,21 +44,16 @@ export const AboutUs = () => {
     },
   ];
 
-  const leftSide = (
+  const description = [t("slogan-1"), t("slogan-2")];
+
+  const header = (
     <AboutUsHeader
       title={t("title-1")}
       subtitle={t("title-2")}
-      titleWorth={t("titleWorth")}
-      worths={worths}
+      description={description}
     />
   );
-  const rightSide = <AboutUsBody />;
+  const body = <AboutUsBody />;
 
-  return (
-    <Container
-      leftSide={leftSide}
-      bgImage={"bg-about-us"}
-      rightSide={rightSide}
-    />
-  );
+  return <Container bgImage={"bg-about-us"} header={header} body={body} />;
 };
