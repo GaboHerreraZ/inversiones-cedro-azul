@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { ProjectHeader } from "@/components/Projects/ProjectHeader";
-import { ProjectBody } from "@/components/Projects/ProjectBody";
+import { ProjectHeader } from "@/components/Projectss/ProjectHeader";
+import { ProjectBody } from "@/components/Projectss/ProjectBody";
 import { Container } from "@/components/Container/Container";
 
 export const Projects = () => {

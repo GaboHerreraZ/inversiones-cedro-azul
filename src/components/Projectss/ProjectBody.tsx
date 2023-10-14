@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Project } from "@/components/Projects/Project";
+import { Project } from "@/components/Projectss/Project";
 
 export const ProjectBody = () => {
   const t = useTranslations("projects");
