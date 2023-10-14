@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import { ProjectHeader } from "@/components/Projectss/ProjectHeader";
 import { ProjectBody } from "@/components/Projectss/ProjectBody";
-import { Container } from "@/components/Container/Container";
+import { Container } from "@/components/Containers/Container";
 
 export const Projects = () => {
   const t = useTranslations("projects");

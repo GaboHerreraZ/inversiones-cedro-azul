@@ -1,9 +1,9 @@
 "use client";
 import { motion, useCycle } from "framer-motion";
 import { useRef, useState } from "react";
-import { useDimensions } from "@/components/Navbar/UseDimensions";
-import { MenuToggle } from "@/components/Navbar/MenuToogle";
-import { Navigation } from "@/components/Navbar/Navigation";
+import { useDimensions } from "@/components/Navbars/UseDimensions";
+import { MenuToggle } from "@/components/Navbars/MenuToogle";
+import { Navigation } from "@/components/Navbars/Navigation";
 
 const sidebar = {
   open: (height = 1000) => ({

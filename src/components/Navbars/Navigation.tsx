@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { MenuItem } from "@/components/Navbar/MenuItem";
+import { MenuItem } from "@/components/Navbars/MenuItem";
 
 const variants = {
   open: {
