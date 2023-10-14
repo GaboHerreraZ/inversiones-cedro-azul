@@ -4,8 +4,7 @@ import quality from "../../../public/img/calidad.jpg";
 import innovation from "../../../public/img/innovacion.jpg";
 import respect from "../../../public/img/respeto.jpg";
 import security from "../../../public/img/seguridad.png";
-import service from "../../../public/img/servicio.png";
-import { Worth } from "./Worth";
+import { Worth } from "@/components/AboutUs/Worth";
 import { motion } from "framer-motion";
 
 export const AboutUsWorths = React.memo(() => {

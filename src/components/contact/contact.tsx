@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Input from "../Utils/Input";
+import Input from "@/components/Utils/Input";
 import logo from "../../../public/img/logo-cedro-azul.png";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import TextArea from "../Utils/TextArea";
+import TextArea from "@/components/Utils/TextArea";
 import { useTranslations } from "next-intl";
-import { POST } from "./Send";
+import { POST } from "@/components/Contact/Send";
 type Service = {
   label: string;
   key: string;

@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { useTranslations } from "next-intl";
 import comercial from "../../../public/img/comercial.jpg";
 import diseno from "../../../public/img/diseno.jpg";
@@ -6,9 +7,8 @@ import remodelacion from "../../../public/img/remodelacion.jpg";
 import consultoria from "../../../public/img/consultoria.jpg";
 import residencial from "../../../public/img/constrccion-residencial.jpg";
 import infraestructura from "../../../public/img/construccion-infraestructura.jpg";
-import React from "react";
-import { ServiceBody } from "./ServiceBody";
-import { ServiceHeader } from "./ServiceHeader";
+import { ServiceBody } from "@/components/Services/ServiceBody";
+import { ServiceHeader } from "@/components/Services/ServiceHeader";
 
 export const Services = React.memo(() => {
   const t = useTranslations("services");

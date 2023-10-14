@@ -1,5 +1,5 @@
 import React from "react";
-import { Slider } from "../utils/Slider";
+import { Slider } from "@/components/Utils/Slider";
 
 export const Project = React.memo(
   ({ project, dateLabel }: { project: any; dateLabel: string }) => {

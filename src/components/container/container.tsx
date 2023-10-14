@@ -1,8 +1,8 @@
 "use client";
 import { useTranslations, useLocale } from "next-intl";
-import { NavbarDesktop } from "../Navbar/NavbarDesktop";
-import { Footer } from "../Footer/Footer";
-import { Navbar } from "../Navbar/Navbar";
+import { NavbarDesktop } from "@/components/Navbar/NavbarDesktop";
+import { Footer } from "@/components/Footer/Footer";
+import { Navbar } from "@/components/Navbar/Navbar";
 
 export const Container = ({
   header,
