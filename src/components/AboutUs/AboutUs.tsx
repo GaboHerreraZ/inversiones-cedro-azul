@@ -1,8 +1,8 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Container } from "../Container/Container";
-import { AboutUsBody } from "./AboutUsBody";
-import { AboutUsHeader } from "./AboutUsHeader";
+import { Container } from "@/components/Container/Container";
+import { AboutUsBody } from "@/components/AboutUs/AboutUsBody";
+import { AboutUsHeader } from "@/components/AboutUs/AboutUsHeader";
 
 export const AboutUs = () => {
   const t = useTranslations("about-us");
