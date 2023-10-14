@@ -31,6 +31,9 @@ export async function generateMetadata({ params: { locale } }: Props) {
 
   return {
     title: t("LocaleLayout.title"),
+    icons: {
+      icon: "/favicon.ico",
+    },
   };
 }
 
@@ -53,5 +56,3 @@ export default async function RootLayout({
     </html>
   );
 }
-
-//<Navbar />
