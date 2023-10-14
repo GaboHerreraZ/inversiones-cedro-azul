@@ -29,7 +29,13 @@ export const AboutUsBody = () => {
         }}
         className="flex flex-col-reverse md:flex-row mb-10 mx-10  justify-start"
       >
-        <Image src={Mision} layout="intrinsic" width={400} height={350} />
+        <Image
+          alt="mision"
+          src={Mision}
+          layout="intrinsic"
+          width={400}
+          height={350}
+        />
         <div className="grid items-center w-full md:w-1/2">
           <span className="block self-end font-bold text-3xl">
             {t("titleMision")}
@@ -58,7 +64,13 @@ export const AboutUsBody = () => {
           </span>
           <p className="self-start md:text-lg">{t("vision")}</p>
         </div>
-        <Image src={Vision} layout="intrinsic" width={400} height={350} />
+        <Image
+          alt="vision"
+          src={Vision}
+          layout="intrinsic"
+          width={400}
+          height={350}
+        />
       </motion.article>
     </section>
   );

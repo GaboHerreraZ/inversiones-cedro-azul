@@ -23,6 +23,7 @@ export const ServiceBody = ({ services }: { services: any }) => {
           >
             <div className="flex flex-col p-4 justify-center items-center text-lg ">
               <Image
+                alt={service.label}
                 src={service.logo}
                 layout="fixed"
                 height={150}

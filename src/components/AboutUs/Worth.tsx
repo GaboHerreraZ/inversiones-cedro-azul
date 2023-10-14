@@ -24,7 +24,13 @@ export const Worth = ({
       }}
       className="p-5 m-2 rounded-md text-center border-2 shadow-lg bg-white"
     >
-      <Image src={image} layout="intrinsic" width={130} height={130} />
+      <Image
+        alt={title}
+        src={image}
+        layout="intrinsic"
+        width={130}
+        height={130}
+      />
       <span className="block text-cedro-900 font-bold">{title}</span>
       <p className="text-lg">{description}</p>
     </motion.div>

@@ -24,6 +24,7 @@ export const MultipleSlider = ({ images }: { images?: any }) => {
       <div className="flex justify-center md:mx-40 md:justify-between items-center gap-5 h-full">
         <span className="hidden md:block">
           <Image
+            alt={"proyectos"}
             src={
               images[currentIndex === 0 ? images.length - 1 : currentIndex - 1]
                 .image
@@ -41,6 +42,7 @@ export const MultipleSlider = ({ images }: { images?: any }) => {
         </span>
         <span className="hidden md:block">
           <Image
+            alt={"proyectos"}
             src={images[currentIndex].image}
             layout="intrinsic"
             width={images[currentIndex].width}
@@ -49,6 +51,7 @@ export const MultipleSlider = ({ images }: { images?: any }) => {
         </span>
         <span>
           <Image
+            alt={"proyectos"}
             src={
               images[currentIndex === images.length - 1 ? 0 : currentIndex + 1]
                 .image

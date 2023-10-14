@@ -8,10 +8,6 @@ import Link from "next/link";
 import TextArea from "@/components/Utils/TextArea";
 import { useTranslations } from "next-intl";
 import { POST } from "@/components/Contact/Send";
-type Service = {
-  label: string;
-  key: string;
-};
 
 type Inputs = {
   name: string;
@@ -54,7 +50,13 @@ export const Contact = React.memo(() => {
       <div className="grid grid-cols-1 bg-black bg-opacity-70 md:grid-cols-2  justify-center gap-4 p-10 rounded-md">
         <div className="self-center justify-self-center text-white text-center text-2xl font-bold">
           <Link href={"/"}>
-            <Image src={logo} layout="fixed" width={300} height={120} />
+            <Image
+              alt="Inversiones cedro azul"
+              src={logo}
+              layout="fixed"
+              width={300}
+              height={120}
+            />
           </Link>
           <h1>{t("doubts")}</h1>
           <h1>{t("contactUs")}</h1>
