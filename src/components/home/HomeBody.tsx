@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Services } from "@/components/Services/Services";
 import { Clients } from "@/components/Clients/Client";
-import { Contact } from "@/components/Contact/Contact";
+import { Contact } from "@/components/Contacts/Contact";
 
 export const HomeBody = React.memo(() => {
   const t = useTranslations("home");
