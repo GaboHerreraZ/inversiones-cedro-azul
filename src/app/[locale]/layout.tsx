@@ -3,7 +3,6 @@ import { Changa } from "next/font/google";
 import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
-import { Navbar } from "@/components/Navbar/Navbar";
 
 const changa = Changa({ subsets: ["latin"] });
 
