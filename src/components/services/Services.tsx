@@ -1,14 +1,14 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { ServiceHeader } from "./ServiceHeader";
-import comercial from "../../../public/img/construccion-comercial.png";
-import diseno from "../../../public/img/diseno-arquitectonico.png";
-import remodelacion from "../../../public/img/remodelacion-renovacion.png";
-import consultoria from "../../../public/img/consultoria-construccion.png";
-import residencial from "../../../public/img/construccion-residencial.png";
-import infraestructura from "../../../public/img/construccion-infraestructura.png";
-import { ServiceBody } from "./ServiceBody";
+import comercial from "../../../public/img/comercial.jpg";
+import diseno from "../../../public/img/diseno.jpg";
+import remodelacion from "../../../public/img/remodelacion.jpg";
+import consultoria from "../../../public/img/consultoria.jpg";
+import residencial from "../../../public/img/constrccion-residencial.jpg";
+import infraestructura from "../../../public/img/construccion-infraestructura.jpg";
 import React from "react";
+import { ServiceBody } from "./ServiceBody";
+import { ServiceHeader } from "./ServiceHeader";
 
 export const Services = React.memo(() => {
   const t = useTranslations("services");
@@ -59,7 +59,7 @@ export const Services = React.memo(() => {
   const body = <ServiceBody services={services} />;
 
   return (
-    <section className="bg-service bg-center bg-cover  w-full mt-20 ">
+    <section className="  w-full mt-20 ">
       <div className="bg-white bg-opacity-80 py-8">
         {Header}
         {body}

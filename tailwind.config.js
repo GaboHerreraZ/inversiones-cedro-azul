@@ -24,22 +24,95 @@ module.exports = {
         service: "url('../../../public/img/servicios.png')",
         projects: "url('../../../public/img/proyectos.png')",
         footer: "url('../../../public/img/footer.jpg')",
+        contacto: "url('../../../public/img/contacto.jpg')",
+        piedecuesta1:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-1.jpg')",
+        piedecuesta2:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-2.jpg')",
+        piedecuesta3:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-3.jpg')",
+        piedecuesta4:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-4.jpg')",
+        piedecuesta5:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-5.jpg')",
+        piedecuesta6:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-6.jpg')",
+        piedecuesta7:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-7.jpg')",
+        piedecuesta8:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-8.jpg')",
+        piedecuesta9:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-9.jpg')",
+        piedecuesta10:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-10.jpg')",
+        piedecuesta11:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-11.jpg')",
+        piedecuesta12:
+          "url('../../../public/img/projects/casa-piedecuesta/casa-piedecuesta-12.jpg')",
+        bucaramanga1:
+          "url('../../../public/img/projects/edificio-bucaramanga/edificio-bucaramanga-1.jpg')",
+        bucaramanga2:
+          "url('../../../public/img/projects/edificio-bucaramanga/edificio-bucaramanga-2.jpg')",
+        bello1: "url('../../../public/img/projects/gas-bello/gas-bello-1.jpg')",
+        bello2: "url('../../../public/img/projects/gas-bello/gas-bello-2.jpg')",
+        bello3: "url('../../../public/img/projects/gas-bello/gas-bello-3.jpg')",
+        bello4: "url('../../../public/img/projects/gas-bello/gas-bello-4.jpg')",
+        bello5: "url('../../../public/img/projects/gas-bello/gas-bello-5.jpg')",
+        bello6: "url('../../../public/img/projects/gas-bello/gas-bello-6.jpg')",
+        bello7: "url('../../../public/img/projects/gas-bello/gas-bello-7.jpg')",
+        bello8: "url('../../../public/img/projects/gas-bello/gas-bello-8.jpg')",
+        cartagena1:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-1.jpg')",
+        cartagena2:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-2.jpg')",
+        cartagena3:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-3.jpg')",
+        cartagena4:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-4.jpg')",
+        cartagena5:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-5.jpg')",
+        cartagena6:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-6.jpg')",
+        cartagena7:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-7.jpg')",
+        cartagena8:
+          "url('../../../public/img/projects/hotel-cartagena/hotel-cartagena-8.jpg')",
+        yondo1:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-1.jpg')",
+        yondo2:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-2.jpg')",
+        yondo3:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-3.jpg')",
+        yondo4:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-4.jpg')",
+        yondo5:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-5.jpg')",
+        yondo6:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-6.jpg')",
+        yondo7:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-7.jpg')",
+        yondo7:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-8.jpg')",
+        yondo7:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-9.jpg')",
+        yondo8:
+          "url('../../../public/img/projects/placa-huellas-yondo/placa-huellas-yondo-10.jpg')",
         placa1:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-1.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-1.jpg')",
         placa2:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-2.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-2.jpg')",
         placa3:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-3.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-3.jpg')",
         placa4:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-4.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-4.jpg')",
         placa5:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-5.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-5.jpg')",
         placa6:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-6.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-6.jpg')",
         placa7:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-7.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-7.jpg')",
         placa8:
-          "url('../../../public/img/projects/placa-huellas/placa-huella-8.jpg')",
+          "url('../../../public/img/projects/placa-huellas-guavata/placa-huella-8.jpg')",
       },
       colors: {
         "background-header": "#faf7f7",

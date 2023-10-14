@@ -1,7 +1,8 @@
 "use client";
 import { useTranslations, useLocale } from "next-intl";
-import { NavbarDesktop } from "../navbar/NavbarDesktop";
+import { NavbarDesktop } from "../Navbar/NavbarDesktop";
 import { Footer } from "../Footer/Footer";
+import { Navbar } from "../Navbar/Navbar";
 
 export const Container = ({
   header,
@@ -31,11 +32,6 @@ export const Container = ({
       label: t("projects"),
       link: `/${locale}/proyectos`,
     },
-    {
-      key: "contact",
-      label: t("contact"),
-      link: `/${locale}/contacto`,
-    },
   ];
 
   return (
@@ -45,6 +41,9 @@ export const Container = ({
           <NavbarDesktop menu={menuNavbar} />
           {header}
         </div>
+        <span className="md:hidden">
+          <Navbar />
+        </span>
       </section>
       <section>{body}</section>
       <Footer />

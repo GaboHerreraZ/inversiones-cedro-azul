@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { MenuItem } from "./menuItem";
 import { useTranslations } from "next-intl";
+import { MenuItem } from "./menuItem";
 
 const variants = {
   open: {
@@ -24,11 +24,6 @@ export const Navigation = ({ clicked }: { clicked: boolean }) => {
       key: "about-us",
       label: t("aboutUs"),
       link: "/sobre-nosotros",
-    },
-    {
-      key: "service",
-      label: t("service"),
-      link: "/servicios",
     },
     {
       key: "projects",

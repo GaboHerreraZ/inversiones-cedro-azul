@@ -1,7 +1,9 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import React from "react";
-import { Services } from "../services/Services";
+import { Services } from "../Services/Services";
+import { Clients } from "../Clients/Client";
+import { Contact } from "../Contact/Contact";
 
 export const HomeBody = React.memo(() => {
   const t = useTranslations("home");
@@ -33,6 +35,8 @@ export const HomeBody = React.memo(() => {
       </section>
 
       <Services />
+      <Contact />
+      <Clients />
     </>
   );
 });

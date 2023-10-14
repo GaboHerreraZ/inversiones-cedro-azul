@@ -1,9 +1,9 @@
 "use client";
 import { motion, useCycle } from "framer-motion";
 import { useRef, useState } from "react";
-import { useDimensions } from "./use-dimensions";
+import { useDimensions } from "./UseDimensions";
+import { MenuToggle } from "./MenuToogle";
 import { Navigation } from "./navigation";
-import { MenuToggle } from "./menu-toogle";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -46,7 +46,7 @@ export const Navbar = () => {
       ref={containerRef}
     >
       <motion.div
-        className="absolute top-0 left-0 bottom-0 w-1/3 bg-white opacity-80"
+        className="absolute top-0 left-0 bottom-0 w-full bg-white opacity-80"
         variants={sidebar}
       />
       <Navigation clicked={clicked} />

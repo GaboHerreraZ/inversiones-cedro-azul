@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Container } from "../Container/Container";
-import { HomeHeader } from "./HomeHeader";
 import { HomeBody } from "./HomeBody";
+import { HomeHeader } from "./HomeHeader";
 
 export const Home = React.memo(() => {
   const header = <HomeHeader />;

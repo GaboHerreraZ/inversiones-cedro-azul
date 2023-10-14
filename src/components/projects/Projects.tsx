@@ -1,23 +1,21 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Container } from "../container/container";
-import { ProjectBody } from "./ProjectBody";
 import { ProjectHeader } from "./ProjectHeader";
+import { ProjectBody } from "./ProjectBody";
+import { Container } from "../Container/Container";
 
 export const Projects = () => {
   const t = useTranslations("projects");
+  const description = [t("slogan-1"), t("slogan-2")];
 
-  const leftSide = (
-    <ProjectHeader title={t("title")} subtitle={t("subtitle")} />
-  );
-  const rightSide = <ProjectBody />;
-
-  return (
-    <Container
-      darkRightSide={false}
-      bgImage={"bg-projects"}
-      leftSide={leftSide}
-      rightSide={rightSide}
+  const header = (
+    <ProjectHeader
+      title={t("title")}
+      subtitle={t("subtitle")}
+      description={description}
     />
   );
+  const body = <ProjectBody />;
+
+  return <Container bgImage={"bg-projects"} header={header} body={body} />;
 };
