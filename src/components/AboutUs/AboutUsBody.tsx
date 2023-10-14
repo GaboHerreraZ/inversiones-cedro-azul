@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/legacy/image";
 import Mision from "../../../public/img/mision.jpg";
 import Vision from "../../../public/img/vision.jpg";
-import { AboutUsWorths } from "./AboutUsWorths";
-import { Contact } from "../Contact/Contact";
+import { AboutUsWorths } from "@/components/AboutUs/AboutUsWorths";
+import { Contact } from "@/components/Contact/Contact";
 
 export const AboutUsBody = () => {
   const t = useTranslations("about-us");

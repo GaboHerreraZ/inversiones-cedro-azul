@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-
-export const AboutUsHeader = ({
+export const ProjectHeader = ({
   title,
   subtitle,
   description,
@@ -48,22 +47,3 @@ export const AboutUsHeader = ({
     </section>
   );
 };
-
-/**
- * 
- * <section className="text-center self-center">
-        <span className="text-xl">{titleWorth}</span>
-        <article className="grid grid-cols-3  md:grid-cols-5 ">
-          {worths.map((worth: any, index: number) => {
-            return (
-              <Worth
-                key={index}
-                title={worth.label}
-                description={worth.description}
-                image={worth.image}
-              />
-            );
-          })}
-        </article>
-      </section>
- */
