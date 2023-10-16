@@ -21,7 +21,6 @@ module.exports = {
         "close-menu": "url('../../../public/svg/close.svg')",
         home: "url('../../../public/img/home.jpg')",
         "about-us": "url('../../../public/img/sobre-nosotros.png')",
-        service: "url('../../../public/img/servicios.png')",
         projects: "url('../../../public/img/proyectos.png')",
         footer: "url('../../../public/img/footer.jpg')",
         contacto: "url('../../../public/img/contacto.jpg')",
