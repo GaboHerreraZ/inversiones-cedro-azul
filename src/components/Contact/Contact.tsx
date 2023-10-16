@@ -28,13 +28,9 @@ export const Contact = React.memo(() => {
   const t = useTranslations("contact");
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log("data", data);
-
     if (!isValid) return;
 
     const response = await POST({ ...data });
-
-    console.log("response", response);
 
     reset({
       name: "",
