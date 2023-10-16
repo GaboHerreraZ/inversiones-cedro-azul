@@ -63,35 +63,34 @@ export const Contact = React.memo(() => {
           </h1>
           <Input
             {...register("name", { required: true })}
-            labelText="Nombre"
+            labelText={t("inputName")}
             required={true}
-            error={errors.name && "Nombre requerido"}
+            error={errors.name && t("inputNameRequired")}
           />
           <Input
-            {...register("lastName", { required: true })}
-            labelText="Apellidos"
-            required={true}
-            error={errors.lastName?.message}
+            {...register("lastName")}
+            labelText={t("inputLastName")}
+            required={false}
           />
           <Input
             {...register("phone", { required: true })}
             type="number"
             required={true}
-            labelText="Telefono"
-            error={errors.phone && "Nombre requerido"}
+            labelText={t("inputPhone")}
+            error={errors.phone && t("inputPhoneRequired")}
           />
           <Input
             {...register("email", { required: true })}
             type="email"
             required={true}
-            labelText="Correo"
-            error={errors.email && "Nombre requerido"}
+            labelText={t("inputEmail")}
+            error={errors.email && t("inputEmailRequired")}
           />
           <TextArea
             {...register("message", { required: true })}
-            labelText="Mensaje"
+            labelText={t("inputMessage")}
             required={true}
-            error={errors.message && "Mensaje requerido"}
+            error={errors.message && t("inputMessageRequired")}
           />
           <button className="button mt-5" type="submit">
             {t("send")}

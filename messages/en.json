@@ -74,6 +74,15 @@
     "doubts": "¿Tienes alguna duda?",
     "contactUs": "Asesórate con nosotros",
     "send": "Enviar",
-    "title": "CONTACTANOS"
+    "title": "CONTACTANOS",
+    "inputName": "Nombre",
+    "inputPhone": "Teléfono",
+    "inputEmail": "Correo",
+    "inputMessage": "Mensaje",
+    "inputLastName": "Apellidos",
+    "inputNameRequired": "Nombre es requerido",
+    "inputPhoneRequired": "Teléfono es requerido",
+    "inputEmailRequired": "Correo es requerido",
+    "inputMessageRequired": "Mensaje es requerido"
   }
 }
