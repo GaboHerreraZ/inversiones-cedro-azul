@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Container } from "@/components/Containers/Container";
-import { HomeBody } from "@/components/Homes/HomeBody";
-import { HomeHeader } from "@/components/Homes/HomeHeader";
+import { Container } from "@/components/Container/Container";
+import { HomeBody } from "@/components/Home/HomeBody";
+import { HomeHeader } from "@/components/Home/HomeHeader";
 
 export const HomeDefault = React.memo(() => {
   const header = <HomeHeader />;

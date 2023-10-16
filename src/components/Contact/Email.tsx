@@ -16,7 +16,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   email,
 }) => (
   <div className="text-center">
-    <h1>Buenas Inversiones Cedro Azul,</h1>
+    <h1>Buenas Grupo Cedro Azul,</h1>
     <p>
       <span className="font-bold">Mi nombre es:</span>
       <span className="font-bold">

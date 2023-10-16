@@ -7,8 +7,8 @@ import remodelacion from "../../../public/img/remodelacion.jpg";
 import consultoria from "../../../public/img/consultoria.jpg";
 import residencial from "../../../public/img/constrccion-residencial.jpg";
 import infraestructura from "../../../public/img/construccion-infraestructura.jpg";
-import { ServiceBody } from "@/components/Servicess/ServiceBody";
-import { ServiceHeader } from "@/components/Servicess/ServiceHeader";
+import { ServiceBody } from "@/components/Services/ServiceBody";
+import { ServiceHeader } from "@/components/Services/ServiceHeader";
 
 export const Services = React.memo(() => {
   const t = useTranslations("services");

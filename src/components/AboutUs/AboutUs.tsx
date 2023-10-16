@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Container } from "@/components/Containers/Container";
+import { Container } from "@/components/Container/Container";
 import { AboutUsBody } from "@/components/AboutUs/AboutUsBody";
 import { AboutUsHeader } from "@/components/AboutUs/AboutUsHeader";
 

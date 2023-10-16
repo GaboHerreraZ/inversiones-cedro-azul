@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Input from "@/components/Utilss/Input";
+import Input from "@/components/Utils/Input";
 import logo from "../../../public/img/logo-cedro-azul.png";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import TextArea from "@/components/Utilss/TextArea";
+import TextArea from "@/components/Utils/TextArea";
 import { useTranslations } from "next-intl";
-import { POST } from "@/components/Contacts/Send";
+import { POST } from "@/components/Contact/Send";
 
 type Inputs = {
   name: string;
@@ -51,7 +51,7 @@ export const Contact = React.memo(() => {
         <div className="self-center justify-self-center text-white text-center text-2xl font-bold">
           <Link href={"/"}>
             <Image
-              alt="Inversiones cedro azul"
+              alt="Grupo cedro azul"
               src={logo}
               layout="fixed"
               width={300}

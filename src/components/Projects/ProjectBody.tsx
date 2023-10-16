@@ -1,13 +1,13 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Project } from "@/components/Projectss/Project";
+import { Project } from "@/components/Projects/Project";
 
 export const ProjectBody = () => {
   const t = useTranslations("projects");
   const projects = [
     {
       title:
-        "DISEÑO Y CONSTRUCCIÓN SALA DE VENTAS UVC – DRCTG EN EL INTERIOR DE LAS INSTALACIONES DEL HOTEL DREAMS KARIBANA CARTAGENA BEACH & GOLF RESORT (“DRCTG”) CON DIRECCIÓN EN ZONA NORTE, KM. 8, MANZANILLO DEL MAR, CARTAGENA, BOLÍVAR, COLOMBIA.",
+        "DISEÑO Y CONSTRUCCIÓN DE CASA CAMPESTRE UBICADA EN PIEDECUESTA, SANTANDER.",
       date: "2023",
       location:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31681.444145714293!2d-73.0745982101409!3d6.988006099883644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6847af37e0be91%3A0x66e8281d38a19920!2sPiedecuesta%2C%20Santander!5e0!3m2!1ses-419!2sco!4v1697294064196!5m2!1ses-419!2sco",

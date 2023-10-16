@@ -1,26 +1,20 @@
 {
-  "core": {
-    "contact": "Contactanos"
-  },
   "navbar": {
     "home": "INICIO",
     "aboutUs": "SOBRE NOSOTROS",
-    "projects": "PROYECTOS",
-    "contact": "CONTACTO"
+    "projects": "PROYECTOS"
   },
   "home": {
-    "title": "INVERSIONES CEDRO AZUL",
+    "title": "GRUPO CEDRO AZUL",
     "slogan": "CONSTRUYENDO PARA DURAR",
     "slogan-2": "CREANDO PARA DIFRUTAR",
-    "contact": "Contactanos",
     "about-us-1": "Somos ",
-    "about-us-2": "INVERSIONES CEDRO AZUL SAS",
+    "about-us-2": "GRUPO CEDRO AZUL",
     "about-us-3": ", una empresa joven y dinámica que ofrece servicios integrales de construcción e ingeniería.",
-    "about-us-4": "Nuestra filosofía es brindar soluciones eficaces y de calidad a nuestros clientes, cumpliendo con sus expectativas y necesidades.",
-    "seeAboutUs": "Más Sobre Nosotros"
+    "about-us-4": "Nuestra filosofía es brindar soluciones eficaces y de calidad a nuestros clientes, cumpliendo con sus expectativas y necesidades."
   },
   "LocaleLayout": {
-    "title": "Inversiones Cedro Azul"
+    "title": "Grupo Cedro Azul"
   },
   "about-us": {
     "title-1": "SOBRE",
@@ -42,8 +36,8 @@
     "serviceDescription": " Nos enfocamos en satisfacer las necesidades y requerimientos de nuestros clientes, brindándoles asesoría, acompañamiento y garantía",
     "innovationDescription": " Nos adaptamos al cambio y buscamos constantemente mejorar nuestros procesos, productos y servicios.",
     "titleWorth": "NUESTROS VALORES",
-    "about-us-1": "En",
-    "about-us-2": "INVERSIONES CEDRO AZUL SAS, ",
+    "about-us-1": "En ",
+    "about-us-2": "GRUPO CEDRO AZUL, ",
     "about-us-3": "la pasión por la construcción se combina con la visión artística para crear espacios que inspiren y perduren. Confía en nosotros para hacer realidad tus proyectos más ambiciosos. Estamos aquí para convertir tus ideas en realidad, paso a paso, desde la concepción hasta la finalización."
   },
   "services": {
@@ -60,7 +54,6 @@
     "infrastructureBuildingDescription": "Diseñamos espacios únicos que se adaptan a tus necesidades y deseos.",
     "consultingBuildingDescription": "Ofrecemos asesoramiento y consultoría en todas las etapas de un proyecto de construcción, desde la planificación hasta la ejecución.",
     "buildingDescription": "Desde casas unifamiliares hasta condominios, estamos especializados en la construcción de viviendas de alta calidad. Ofrecemos un proceso de construcción transparente y eficiente.",
-    "seeMore": "Ver más...",
     "description": "Desde nuestra fundación en el año 2019, hemos realizado proyectos exitosos en diferentes áreas, como vías, edificaciones, diseño y remodelación de interiores, redes hidrosanitarias, gas y contraincendios, instalaciones de sistemas de Aires acondicionados, fabricación de carpintería madera, metálica y de aluminio. "
   },
   "projects": {
@@ -69,12 +62,12 @@
     "slogan-1": "DISEÑANMOS EL FUTURO, ",
     "slogan-2": "CONSTRUIMOS EL PRESENTE.",
     "project-1": "En ",
-    "project-2": "INVERSIONES CEDRO AZUL SAS, ",
+    "project-2": "GRUPO CEDRO AZUL, ",
     "project-3": "cada proyecto es una expresión única de creatividad y experiencia. Desde diseños arquitectónicos hasta proyectos de construcción sólidos y funcionales, nuestra dedicación a la excelencia se refleja en cada detalle. Explora nuestro portafolio de proyectos que han transformado espacios y superado expectativas.",
     "labelDate": "Fecha de ejecución:"
   },
   "client": {
-    "title": "INVERSIONISTAS",
+    "title": "NUESTROS CLIENTES",
     "description": "Nuestro trabajo ha sido respaldado por una amplia base de clientes satisfechos que confiaron en nosotros para sus proyectos de construcción y diseño."
   },
   "contact": {

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import { MultipleSlider } from "@/components/Utilss/MultipleSlider";
+import { MultipleSlider } from "@/components/Utils/MultipleSlider";
 import fgc from "../../../public/img/clients/fgc.png";
 import gbs from "../../../public/img/clients/gbs.png";
 import stt from "../../../public/img/clients/stt.png";

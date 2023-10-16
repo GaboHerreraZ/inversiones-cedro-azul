@@ -12,14 +12,14 @@ export const Footer = React.memo(() => {
         <div className="pt-10">
           <Link href={"/"}>
             <Image
-              alt="inversiones cedro azul"
+              alt="Grupo cedro azul"
               src={logo}
               layout="fixed"
               width={250}
               height={100}
             />
           </Link>
-          <p className="m-0">2023 @ Copyright Inversiones Cedro Azul S.A.S |</p>
+          <p className="m-0">2023 @ Copyright Grupo Cedro Azul |</p>
           <p className="m-0">Cra 31 # 22 257 Of 502 Floridablanca, Colombia</p>
           <div className="flex justify-center mt-5 gap-4">
             <Link href={""} className="hover:scale-[1.5] duration-500">
