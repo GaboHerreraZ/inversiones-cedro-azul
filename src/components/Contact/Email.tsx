@@ -15,17 +15,31 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
   message,
   email,
 }) => (
-  <div className="text-center">
+  <div style={{ textAlign: "center" }}>
     <h1>Buenas Grupo Cedro Azul,</h1>
     <p>
-      <span className="font-bold">Mi nombre es:</span>
-      <span className="font-bold">
+      <span>Mi nombre es: </span>
+      <span
+        style={{ fontWeight: "bold", marginLeft: "2px", marginRight: "2px" }}
+      >
         {name} {lastName}
       </span>
-      y estoy interesado en invertir con ustedes, mi número de celular es:{" "}
-      <span className="font-bold">{phone}</span> y correo:{" "}
-      <span className="font-bold">{email}</span>, mi mensaje es:
+      y estoy interesado en invertir con ustedes, mi número de celular es:
+      <span
+        style={{ fontWeight: "bold", marginLeft: "2px", marginRight: "2px" }}
+      >
+        {phone}
+      </span>
+      y correo:
+      <span
+        style={{ fontWeight: "bold", marginLeft: "2px", marginRight: "2px" }}
+      >
+        {email}
+      </span>
+      , mi mensaje es:
     </p>
-    <p className="font-bold">{message}</p>
+    <p style={{ fontWeight: "bold", marginLeft: "2px", marginRight: "2px" }}>
+      {message}
+    </p>
   </div>
 );

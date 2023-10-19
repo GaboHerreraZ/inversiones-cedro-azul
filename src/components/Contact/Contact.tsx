@@ -7,7 +7,6 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import TextArea from "@/components/Utils/TextArea";
 import { useTranslations } from "next-intl";
-import { POST } from "@/components/Contact/Send";
 
 type Inputs = {
   name: string;
@@ -19,7 +18,7 @@ type Inputs = {
 
 export const Contact = React.memo(() => {
   const {
-    formState: { errors, isValid },
+    formState: { errors, isValid, isSubmitSuccessful },
     register,
     reset,
     handleSubmit,
@@ -30,15 +29,25 @@ export const Contact = React.memo(() => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     if (!isValid) return;
 
-    const response = await POST({ ...data });
+    console.log("data", data);
 
-    reset({
-      name: "",
-      email: "",
-      lastName: "",
-      phone: "",
-      message: "",
+    const response = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
     });
+
+    if (response.status === 200) {
+      reset({
+        name: "",
+        email: "",
+        lastName: "",
+        phone: "",
+        message: "",
+      });
+    }
   };
 
   return (
@@ -61,6 +70,7 @@ export const Contact = React.memo(() => {
           <h1 className="text-center text-3xl text-white font-bold">
             {t("title")}
           </h1>
+
           <Input
             {...register("name", { required: true })}
             labelText={t("inputName")}
@@ -95,6 +105,15 @@ export const Contact = React.memo(() => {
           <button className="button mt-5" type="submit">
             {t("send")}
           </button>
+          {isSubmitSuccessful ? (
+            <div className="bg-green-500 p-3 text-center mt-3 rounded-md">
+              <h1 className="text-white">
+                Gracias!!, pronto estaremos en contacto contigo
+              </h1>
+            </div>
+          ) : (
+            ""
+          )}
         </form>
       </div>
     </section>

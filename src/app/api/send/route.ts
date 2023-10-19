@@ -1,27 +1,17 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import * as React from "react";
-import { EmailTemplate } from "./Email";
+import { EmailTemplate } from "@/components/Contact/Email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST({
-  name,
-  lastName,
-  email,
-  phone,
-  message,
-}: {
-  name: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  message: string;
-}) {
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const { name, lastName, phone, email, message } = body;
   try {
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
-      to: ["andersonmuneton@gmail.com", "herzar_620@hotmail.com"],
+      from: "Grupo Cedro Azul Contacto <info-no-reply@grupocedroazul.com>",
+      to: ["andersonmuneton@gmail.com"],
       subject: "Interesado en Grupo Cedro Azul",
       react: EmailTemplate({
         name,
