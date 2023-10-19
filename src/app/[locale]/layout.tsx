@@ -3,6 +3,7 @@ import { Changa } from "next/font/google";
 import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
+import { Metadata } from "next";
 
 const changa = Changa({ subsets: ["latin"] });
 
@@ -20,18 +21,29 @@ async function getMessages(locale: string) {
 }
 
 export async function generateStaticParams() {
-  return ["en", "de"].map((locale) => ({ locale }));
+  return ["en", "es"].map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params: { locale },
+}: Props): Promise<Metadata> {
   const messages = await getMessages(locale);
 
   const t = createTranslator({ locale, messages });
 
   return {
-    title: t("LocaleLayout.title"),
+    metadataBase: new URL(`https://www.grupocedroazul.com`),
+    title: {
+      default: t("LocaleLayout.title"),
+      template: `%s | ${t("LocaleLayout.title")}`,
+    },
+    description: "Página web de Constructora Grupo cedro azul",
     icons: {
-      icon: "/favicon.ico",
+      icon: `/${locale}/logo-cedro-azul.png`,
+    },
+    verification: {
+      google:
+        "google-site-verification=j4qbfRUaRloQ7WypWFJItiZVxeoc55Fr42tf_tz7PWw",
     },
   };
 }

@@ -29,8 +29,6 @@ export const Contact = React.memo(() => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     if (!isValid) return;
 
-    console.log("data", data);
-
     const response = await fetch("/api/send", {
       method: "POST",
       headers: {
