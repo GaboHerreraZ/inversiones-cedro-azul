@@ -1,6 +1,6 @@
 const nextConfig = {
   env: {
-    RESEND_API_KEY: "re_AvQnRSFF_Lp9emzqfS7XDBwHFqDNGKE8R",
+    RESEND_API_KEY: "re_KJZv8JWQ_AiJg8ueWFsPtLGCRfCv1gcZ6",
   },
 };
 
