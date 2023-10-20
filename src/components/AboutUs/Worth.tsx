@@ -22,7 +22,7 @@ export const Worth = ({
       whileHover={{
         scale: 1.1,
       }}
-      className="p-5 m-2 rounded-md text-center border-2 shadow-lg bg-white"
+      className="p-5 m-2 rounded-md text-center border-2 shadow-xl bg-white"
     >
       <Image
         alt={title}

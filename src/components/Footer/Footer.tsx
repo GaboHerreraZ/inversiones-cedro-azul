@@ -4,23 +4,25 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import facebook from "../../../public/svg/facebook.svg";
 import instagram from "../../../public/svg/instagram.svg";
+import { useTranslations } from "next-intl";
 
 export const Footer = React.memo(() => {
+  const t = useTranslations("footer");
+
   return (
-    <footer className="block bg-footer bg-center bg-cover h-[250px]">
+    <footer className="block bg-footer  bg-center bg-cover ">
       <div className="bg-black bg-opacity-70 h-full text-white text-center">
-        <div className="pt-10">
+        <div className="py-5">
           <Link href={"/"}>
             <Image
               alt="Grupo cedro azul"
               src={logo}
               layout="fixed"
-              width={250}
-              height={100}
+              width={150}
+              height={150}
             />
           </Link>
           <p className="m-0">2023 @ Copyright Grupo Cedro Azul |</p>
-          <p className="m-0">Cra 31 # 22 257 Of 502 Floridablanca, Colombia</p>
           <div className="flex justify-center mt-5 gap-4">
             <Link href={""} className="hover:scale-[1.5] duration-500">
               <Image
@@ -41,6 +43,16 @@ export const Footer = React.memo(() => {
               />
             </Link>
           </div>
+        </div>
+        <div className="p-2 border-t-[1px] text-[12px] self-end border-white">
+          {t("designed")}
+          <Link
+            className="mx-2 underline"
+            href={"https://gabrielherrerazdev.com/"}
+            target="_blank"
+          >
+            GabrielHerreraDev
+          </Link>
         </div>
       </div>
     </footer>

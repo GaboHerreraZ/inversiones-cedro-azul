@@ -84,5 +84,8 @@
     "inputPhoneRequired": "Teléfono es requerido",
     "inputEmailRequired": "Correo es requerido",
     "inputMessageRequired": "Mensaje es requerido"
+  },
+  "footer": {
+    "designed": "Designed by"
   }
 }

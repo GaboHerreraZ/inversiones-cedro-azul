@@ -19,7 +19,7 @@ module.exports = {
           "linear-gradient(10deg, #44B5FC, #0D3578, #44B5FC, #0D3578, #44B5FC, #0D3578, #44B5FC, #0D3578)",
         "open-menu": "url('../../../public/svg/bars.svg')",
         "close-menu": "url('../../../public/svg/close.svg')",
-        home: "url('../../../public/img/home.jpg')",
+        home: "url('../../../public/img/home.png')",
         "about-us": "url('../../../public/img/sobre-nosotros.png')",
         projects: "url('../../../public/img/proyectos.png')",
         footer: "url('../../../public/img/footer.jpg')",

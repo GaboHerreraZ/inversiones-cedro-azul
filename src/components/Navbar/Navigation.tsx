@@ -12,32 +12,18 @@ const variants = {
   },
 };
 
-export const Navigation = ({ clicked }: { clicked: boolean }) => {
+export const Navigation = ({
+  clicked,
+  menu,
+}: {
+  clicked: boolean;
+  menu: any[];
+}) => {
   const t = useTranslations("navbar");
-  const menuNavbar = [
-    {
-      key: "home",
-      label: t("home"),
-      link: "/",
-    },
-    {
-      key: "about-us",
-      label: t("aboutUs"),
-      link: "/sobre-nosotros",
-    },
-    {
-      key: "projects",
-      label: t("projects"),
-      link: "/proyectos",
-    },
-  ];
 
   return (
-    <motion.ul
-      variants={variants}
-      className={`absolute m-0 p-6 top-24  ${clicked ? "w-1/3" : "w-0"}`}
-    >
-      {clicked && menuNavbar.map((i) => <MenuItem i={i} key={i.key} />)}
+    <motion.ul variants={variants} className={`absolute m-0 p-6 top-24 w-full`}>
+      {clicked && menu.map((i) => <MenuItem i={i} key={i.key} />)}
     </motion.ul>
   );
 };

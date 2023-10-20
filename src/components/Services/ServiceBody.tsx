@@ -17,7 +17,7 @@ export const ServiceBody = ({ services }: { services: any }) => {
             transition={{
               duration: 0.8,
             }}
-            className="basis-1/2  rounded-md text-cedro-900 border-2 shadow-lg"
+            className="basis-1/2  rounded-md text-cedro-900 border-2 shadow-xl"
             key={index}
             whileHover={{ scale: 1.05 }}
           >
@@ -29,7 +29,9 @@ export const ServiceBody = ({ services }: { services: any }) => {
                 height={150}
                 width={200}
               />
-              <span className="font-bold mb-1">{service.label}</span>
+              <span className="font-bold mb-1 text-center">
+                {service.label}
+              </span>
               <span className="mt-4  text-justify">{service.description}</span>
             </div>
           </motion.li>

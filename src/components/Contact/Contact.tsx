@@ -57,8 +57,8 @@ export const Contact = React.memo(() => {
               alt="Grupo cedro azul"
               src={logo}
               layout="fixed"
-              width={300}
-              height={120}
+              width={250}
+              height={250}
             />
           </Link>
           <h1>{t("doubts")}</h1>

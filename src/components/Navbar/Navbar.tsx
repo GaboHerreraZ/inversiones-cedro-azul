@@ -25,7 +25,7 @@ const sidebar = {
   },
 };
 
-export const Navbar = () => {
+export const Navbar = ({ menu }: { menu: any[] }) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const [clicked, setClicked] = useState(false);
 
@@ -49,7 +49,7 @@ export const Navbar = () => {
         className="absolute top-0 left-0 bottom-0 w-full bg-white opacity-80"
         variants={sidebar}
       />
-      <Navigation clicked={clicked} />
+      <Navigation clicked={clicked} menu={menu} />
       <MenuToggle toggle={() => handleButton()} />
     </motion.nav>
   );

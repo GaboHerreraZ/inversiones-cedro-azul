@@ -20,29 +20,31 @@ export const Container = ({
     {
       key: "home",
       label: t("home"),
-      link: `/${locale}`,
+      link: `/${locale === "es" ? "" : locale}`,
     },
     {
       key: "about-us",
       label: t("aboutUs"),
-      link: `/${locale}/sobre-nosotros`,
+      link: `/${locale === "es" ? "" : locale + "/"}sobre-nosotros`,
     },
     {
       key: "projects",
       label: t("projects"),
-      link: `/${locale}/proyectos`,
+      link: `/${locale === "es" ? "" : locale + "/"}proyectos`,
     },
   ];
 
   return (
     <>
-      <section className={`w-full h-home ${bgImage} bg-center bg-cover `}>
-        <div className="h-full bg-black bg-opacity-80">
+      <section
+        className={`w-full h-home ${bgImage} bg-center bg-cover animation duration-1000 `}
+      >
+        <div className="h-full bg-white bg-opacity-60">
           <NavbarDesktop menu={menuNavbar} />
           {header}
         </div>
         <span className="md:hidden">
-          <Navbar />
+          <Navbar menu={menuNavbar} />
         </span>
       </section>
       <section>{body}</section>

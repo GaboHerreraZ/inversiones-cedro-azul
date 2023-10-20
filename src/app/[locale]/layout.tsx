@@ -1,11 +1,11 @@
 import "./globals.css";
-import { Changa } from "next/font/google";
+import { Rosario } from "next/font/google";
 import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import icon from "./logo-cedro-azul.png";
-const changa = Changa({ subsets: ["latin"] });
+import icon from "./logo-cedro-azul-icon.png";
+const rosario = Rosario({ subsets: ["latin"] });
 
 type Props = {
   children: ReactNode;
@@ -62,7 +62,7 @@ export default async function RootLayout({
 
   return (
     <html lang="es" className="light">
-      <body className={changa.className} style={{ fontSize: "14px" }}>
+      <body className={rosario.className} style={{ fontSize: "14px" }}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
