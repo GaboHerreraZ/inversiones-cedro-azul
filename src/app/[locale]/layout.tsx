@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import { Metadata } from "next";
-
+import icon from "./logo-cedro-azul.png";
 const changa = Changa({ subsets: ["latin"] });
 
 type Props = {
@@ -39,7 +39,10 @@ export async function generateMetadata({
     },
     description: "Página web de Constructora Grupo cedro azul",
     icons: {
-      icon: `/${locale}/logo-cedro-azul.png`,
+      icon: {
+        rel: "icon",
+        url: icon.src,
+      },
     },
     verification: {
       google:
