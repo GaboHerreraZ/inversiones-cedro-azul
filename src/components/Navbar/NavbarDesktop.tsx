@@ -4,21 +4,23 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import facebook from "../../../public/svg/facebook-cedro.svg";
 import instagram from "../../../public/svg/instagram-cedro.svg";
-import phone from "../../../public/svg/phone-cedro-azul.svg";
+import youtube from "../../../public/svg/youtube-cedro.svg";
+
+import whatsapp from "../../../public/svg/whatsapp.svg";
 
 export const NavbarDesktop = React.memo(({ menu }: { menu: any[] }) => {
   const path = usePathname();
   return (
     <nav className=" hidden  md:grid md:grid-cols-3 md:justify-between bg-white bg-opacity-30 ">
-      <p className="flex items-center ml-5  font-bold ">
-        <span className="text-cedro-700 mr-2 pr-2 text-center border-r-2 border-cedro-900 ">
+      <p className="flex items-center ml-5  font-bold md:text-base">
+        <span className="text-cedro-700 mr-2 pr-1 text-center border-r-2 border-cedro-900 ">
           CEDRO AZUL
         </span>
         <Link href={"./"} className="text-cedro-900 text-center ">
           INVERSIONES & CONSTRUCCIONES
         </Link>
       </p>
-      <ul className="flex justify-center gap-8 py-5 text-base font-bold text-cedro-900 w-full">
+      <ul className="flex justify-center gap-8 py-5 items-center text-base font-bold text-cedro-900 w-full">
         {menu.map((m: any, index: number) => (
           <li
             key={index}
@@ -31,17 +33,34 @@ export const NavbarDesktop = React.memo(({ menu }: { menu: any[] }) => {
         ))}
       </ul>
       <div className="flex  items-center justify-end mr-5   gap-5">
-        <span className="flex gap-1 mb-1 items-center  text-cedro-900 font-bold">
+        <Link
+          href={`https://api.whatsapp.com/send?phone=573177038852&text=Hola+Grupo+Cedro+Azul,+quería+tener+más+información`}
+          target="_blank"
+          className="flex gap-1 mb-1 items-center  text-cedro-900 font-bold"
+        >
           <Image
-            alt="phone"
-            src={phone}
+            alt="Whatsapp"
+            src={whatsapp}
             layout="fixed"
             width={20}
             height={20}
           />
           (+57) 317 703 8852
-        </span>
-        <Link href={""} className="hover:scale-105 duration-500">
+        </Link>
+        <Link href={""} className="hover:scale-150 duration-500">
+          <Image
+            alt="YouTube"
+            src={youtube}
+            layout="fixed"
+            width={25}
+            height={25}
+          />
+        </Link>
+        <Link
+          href={"https://www.facebook.com/profile.php?id=61552664671472"}
+          target="_blank"
+          className="hover:scale-150 duration-500"
+        >
           <Image
             alt="facebook"
             src={facebook}
@@ -50,7 +69,11 @@ export const NavbarDesktop = React.memo(({ menu }: { menu: any[] }) => {
             height={25}
           />
         </Link>
-        <Link href={""} className="hover:scale-105 duration-500">
+        <Link
+          href={"https://www.instagram.com/grupocedroazul/"}
+          className="hover:scale-150 duration-500"
+          target="_blank"
+        >
           <Image
             alt="instagram"
             src={instagram}

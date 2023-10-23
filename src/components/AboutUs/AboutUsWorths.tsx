@@ -50,7 +50,7 @@ export const AboutUsWorths = React.memo(() => {
         transition={{
           duration: 1.2,
         }}
-        className="bg-black bg-opacity-5  md:mx-30 p-3 md:p-4 rounded-2xl text-center text-xl md:text-2xl"
+        className="bg-cedro-500 bg-opacity-20  md:mx-30 p-3 md:p-4 rounded-2xl text-center text-xl md:text-2xl"
       >
         <p className="text-cedro-900">
           {t("about-us-1")}

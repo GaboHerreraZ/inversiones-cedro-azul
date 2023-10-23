@@ -23,7 +23,7 @@ export const Clients = React.memo(() => {
   return (
     <section className="my-10 text-center text-cedro-900">
       <h1 className="font-bold text-4xl mb-8">{t("title")}</h1>
-      <p className="p-4 mx-10 bg-black bg-opacity-5 rounded-md text-2xl">
+      <p className="p-4 mx-10 bg-cedro-500 bg-opacity-20 rounded-md text-2xl">
         {t("description")}
       </p>
 

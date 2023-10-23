@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "../../../public/img/logo-cedro-azul.png";
+import logo from "../../../public/img/logo-cedro-azul-claro.png";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import facebook from "../../../public/svg/facebook.svg";
+import youtube from "../../../public/svg/youtube.svg";
 import instagram from "../../../public/svg/instagram.svg";
 import { useTranslations } from "next-intl";
 
@@ -24,7 +25,24 @@ export const Footer = React.memo(() => {
           </Link>
           <p className="m-0">2023 @ Copyright Grupo Cedro Azul |</p>
           <div className="flex justify-center mt-5 gap-4">
-            <Link href={""} className="hover:scale-[1.5] duration-500">
+            <Link
+              href={""}
+              target="_blank"
+              className="hover:scale-[1.5] duration-500"
+            >
+              <Image
+                alt="YouTube"
+                src={youtube}
+                layout="fixed"
+                width={20}
+                height={20}
+              />
+            </Link>
+            <Link
+              href={"https://www.facebook.com/profile.php?id=61552664671472"}
+              target="_blank"
+              className="hover:scale-[1.5] duration-500"
+            >
               <Image
                 alt="facebook"
                 src={facebook}
@@ -33,7 +51,11 @@ export const Footer = React.memo(() => {
                 height={20}
               />
             </Link>
-            <Link href={""} className="hover:scale-[1.5] duration-500">
+            <Link
+              href={"https://www.instagram.com/grupocedroazul/"}
+              target="_blank"
+              className="hover:scale-[1.5] duration-500"
+            >
               <Image
                 alt="instagram"
                 src={instagram}

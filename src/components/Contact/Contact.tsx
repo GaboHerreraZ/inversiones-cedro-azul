@@ -2,7 +2,7 @@
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Input from "@/components/Utils/Input";
-import logo from "../../../public/img/logo-cedro-azul.png";
+import logo from "../../../public/img/logo-cedro-azul-claro.png";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import TextArea from "@/components/Utils/TextArea";

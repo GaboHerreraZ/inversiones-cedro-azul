@@ -70,13 +70,13 @@ export const MultipleSlider = ({ images }: { images?: any }) => {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-10 bg-black rounded-full py-2  pl-1 pr-2 flex items-center bg-opacity-10"
+        className="absolute top-1/2 left-10  rounded-full py-2  pl-1 pr-2 flex items-center bg-opacity-10 hover:scale-125 duration-500"
       >
         <Image src={ArrowLeft} layout="fixed" width={20} height={20} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-10 bg-black rounded-full py-2 pl-2 pr-1  flex items-center bg-opacity-10"
+        className="absolute top-1/2 right-10  rounded-full py-2 pl-2 pr-1  flex items-center bg-opacity-10  hover:scale-125 duration-500"
       >
         <Image src={ArrowRight} layout="fixed" width={20} height={20} />
       </button>
