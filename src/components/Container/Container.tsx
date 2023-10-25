@@ -39,7 +39,7 @@ export const Container = ({
     <>
       <section className="relative w-full h-home">
         <div className="animation-fadeIn ">
-          <Image src={bgImage} layout="fill" objectFit="cover" />
+          <Image alt="header" src={bgImage} layout="fill" objectFit="cover" />
         </div>
 
         <div className="h-full absolute inset-0 bg-white bg-opacity-60">

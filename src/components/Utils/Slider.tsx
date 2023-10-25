@@ -27,7 +27,12 @@ export const Slider = ({ images }: { images: any }) => {
             index === currentIndex ? "opacity-100" : "opacity-0"
           } rounded-2xl  `}
         >
-          <Image src={image} layout="fill" objectFit="cover" />
+          <Image
+            alt="imagen proyecto"
+            src={image}
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
       ))}
       <button

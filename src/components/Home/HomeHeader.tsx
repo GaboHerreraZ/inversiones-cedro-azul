@@ -17,7 +17,13 @@ export const HomeHeader = React.memo(() => {
         transition={{ duration: 1.2 }}
         className=" md:border-r-4 self-end px-8 border-cedro-900"
       >
-        <Image src={logo} layout="intrinsic" height={250} width={250} />
+        <Image
+          alt="Grupo Cedro azul"
+          src={logo}
+          layout="intrinsic"
+          height={250}
+          width={250}
+        />
       </motion.span>
       <motion.div
         initial={{
