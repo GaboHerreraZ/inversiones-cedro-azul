@@ -4,14 +4,10 @@ import { Slider } from "@/components/Utils/Slider";
 export const Project = React.memo(
   ({ project, dateLabel }: { project: any; dateLabel: string }) => {
     return (
-      <article
-        className={`flex flex-col-reverse my-10 md:grid md:grid-cols-2 ${
-          project.inverse ? "" : ""
-        }`}
-      >
+      <article className="flex flex-col-reverse my-10 md:grid md:grid-cols-2">
         <Slider images={project.images} />
         <div className="grid items-center text-center text-cedro-900 justify-center p-10">
-          <h1 className="font-bold  text-2xl">{project.title}</h1>
+          <h1 className="font-bold  text-xl">{project.title}</h1>
           <p className="text-lg">
             <span className="font-bold ">{dateLabel}</span> {project.date}
           </p>

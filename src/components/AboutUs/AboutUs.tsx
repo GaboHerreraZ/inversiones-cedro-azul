@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/Container/Container";
 import { AboutUsBody } from "@/components/AboutUs/AboutUsBody";
 import { AboutUsHeader } from "@/components/AboutUs/AboutUsHeader";
+import aboutUs from "../../../public/img/sobre-nosotros.png";
 
 export const AboutUs = () => {
   const t = useTranslations("about-us");
@@ -18,5 +19,5 @@ export const AboutUs = () => {
   );
   const body = <AboutUsBody />;
 
-  return <Container bgImage={"bg-about-us"} header={header} body={body} />;
+  return <Container bgImage={aboutUs} header={header} body={body} />;
 };

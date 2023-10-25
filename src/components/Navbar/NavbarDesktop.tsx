@@ -11,7 +11,7 @@ import whatsapp from "../../../public/svg/whatsapp.svg";
 export const NavbarDesktop = React.memo(({ menu }: { menu: any[] }) => {
   const path = usePathname();
   return (
-    <nav className=" hidden  md:grid md:grid-cols-3 md:justify-between bg-white bg-opacity-30 ">
+    <nav className="hidden  md:grid md:grid-cols-3 md:justify-between bg-white bg-opacity-30 ">
       <p className="flex items-center ml-5  font-bold md:text-base">
         <span className="text-cedro-700 mr-2 pr-1 text-center border-r-2 border-cedro-900 ">
           CEDRO AZUL
@@ -47,7 +47,11 @@ export const NavbarDesktop = React.memo(({ menu }: { menu: any[] }) => {
           />
           (+57) 317 703 8852
         </Link>
-        <Link href={""} className="hover:scale-150 duration-500">
+        <Link
+          href={"https://www.youtube.com/@grupocedroazul"}
+          className="hover:scale-150 duration-500"
+          target="_blank"
+        >
           <Image
             alt="YouTube"
             src={youtube}

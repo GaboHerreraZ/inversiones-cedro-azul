@@ -3,6 +3,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { NavbarDesktop } from "@/components/Navbar/NavbarDesktop";
 import { Footer } from "@/components/Footer/Footer";
 import { Navbar } from "@/components/Navbar/Navbar";
+import Image from "next/legacy/image";
 
 export const Container = ({
   header,
@@ -11,7 +12,7 @@ export const Container = ({
 }: {
   header: any;
   body: any;
-  bgImage: string;
+  bgImage: any;
 }) => {
   const t = useTranslations("navbar");
   const locale = useLocale();
@@ -36,10 +37,12 @@ export const Container = ({
 
   return (
     <>
-      <section
-        className={`w-full h-home ${bgImage} bg-center bg-cover animation duration-1000 `}
-      >
-        <div className="h-full bg-white bg-opacity-60">
+      <section className="relative w-full h-home">
+        <div className="animation-fadeIn ">
+          <Image src={bgImage} layout="fill" objectFit="cover" />
+        </div>
+
+        <div className="h-full absolute inset-0 bg-white bg-opacity-60">
           <NavbarDesktop menu={menuNavbar} />
           {header}
         </div>

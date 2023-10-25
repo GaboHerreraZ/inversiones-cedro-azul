@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { ProjectHeader } from "@/components/Projects/ProjectHeader";
 import { ProjectBody } from "@/components/Projects/ProjectBody";
 import { Container } from "@/components/Container/Container";
+import project from "../../../public/img/proyectos.png";
 
 export const Projects = () => {
   const t = useTranslations("projects");
@@ -17,5 +18,5 @@ export const Projects = () => {
   );
   const body = <ProjectBody />;
 
-  return <Container bgImage={"bg-projects"} header={header} body={body} />;
+  return <Container bgImage={project} header={header} body={body} />;
 };

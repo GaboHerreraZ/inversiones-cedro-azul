@@ -23,10 +23,10 @@ export const Footer = React.memo(() => {
               height={150}
             />
           </Link>
-          <p className="m-0">2023 @ Copyright Grupo Cedro Azul |</p>
+          <p className="m-0">2023 @ Copyright Grupo Cedro Azul</p>
           <div className="flex justify-center mt-5 gap-4">
             <Link
-              href={""}
+              href={"https://www.youtube.com/@grupocedroazul"}
               target="_blank"
               className="hover:scale-[1.5] duration-500"
             >
